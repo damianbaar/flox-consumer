@@ -1,0 +1,15 @@
+{
+  "elements": [
+    {
+      "active": true,
+      "attrPath": "packages.aarch64-darwin.flox-simple-project",
+      "originalUrl": "damianbaar",
+      "outputs": null,
+      "storePaths": [
+        "/nix/store/72a4mli1c050qg65bm97hm7bg37hd914-python3.10-flox-simple-project-0.0.3"
+      ],
+      "url": "flake:damianbaar/3477a73b7f1b4e312b1e09cef52e879040d77aa9"
+    }
+  ],
+  "version": 2
+}
