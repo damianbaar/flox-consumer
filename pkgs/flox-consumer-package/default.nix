@@ -6,7 +6,7 @@
 }:
 # Replace "stdenv.mkDerivation" with your language's builder
 stdenv.mkDerivation {
-  pname = "flox-consumer";
+  pname = "flox-consumer-package";
   version = "0.0.0-${lib.flox-floxpkgs.getRev self}";
   src = self; # + "/src";
 
@@ -16,6 +16,12 @@ stdenv.mkDerivation {
   # Add runtime dependencies required by packages that
   # depend on this package to propagatedBuildInputs.
   propagatedBuildInputs = [];
+
+  installPhase = ''
+    mkdir -p $out
+    touch $out/test.txt
+    echo "###" > $out/test.txt
+    '';
 
   # Add buildtime dependencies (not required at runtime)
   # to nativeBuildInputs.
