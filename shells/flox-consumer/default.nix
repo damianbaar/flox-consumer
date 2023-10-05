@@ -6,7 +6,7 @@
   zlib,
   flox-consumer-package,
   flox-simple-lib,
-  hello-world
+  hello-python
 }:
 #
 # Create a development shell using three sections:
@@ -34,7 +34,7 @@ mkShell {
   WELCOME_MESSAGE = "Run make to build this project";
   PKG_REF = "${toString flox-consumer-package}";
   PKG_REF_2 = "${toString flox-simple-lib}";
-  PKG_REF_3 = "${toString hello-world}";
+  PKG_REF_3 = "${toString hello-python}";
 
   # A shell hook is a script to run when entering an environment.
   # It can be used to perform any custom activation steps needed for your
@@ -44,6 +44,6 @@ mkShell {
     echo ${flox-consumer-package}
     echo ${flox-simple-lib}
     echo "CONSUMER"
-    echo ${hello-world}
+    echo ${hello-python}
   '';
 }
