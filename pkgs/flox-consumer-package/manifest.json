@@ -1,0 +1,15 @@
+{
+  "elements": [
+    {
+      "active": true,
+      "attrPath": "packages.aarch64-darwin.flox-simple-lib",
+      "originalUrl": "db-flox-simple-lib",
+      "outputs": null,
+      "storePaths": [
+        "/nix/store/7qacwvvp4kdk7h56wnlm8bcv79ld8cwy-python3.10-flox-simple-lib-0.0.1"
+      ],
+      "url": "flake:db-flox-simple-lib/a1957c85f617042566e53f7547d57e78182180f3"
+    }
+  ],
+  "version": 2
+}

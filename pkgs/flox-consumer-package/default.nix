@@ -3,6 +3,7 @@
   self,
   stdenv,
   lib,
+  # db-flox-simple-lib
 }:
 # Replace "stdenv.mkDerivation" with your language's builder
 stdenv.mkDerivation {
@@ -22,6 +23,7 @@ stdenv.mkDerivation {
     touch $out/test.txt
     echo "###" > $out/test.txt
     '';
+    # echo ${packages.aarch64-darwin.flox-simple-lib}
 
   # Add buildtime dependencies (not required at runtime)
   # to nativeBuildInputs.
