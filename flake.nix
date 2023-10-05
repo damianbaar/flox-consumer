@@ -11,6 +11,7 @@
         # the format is equivalent to package definitions in
         # `./pkgs/my-pkg/default.nix`
         flox-simple-lib = {inputs}: inputs.flox-simple-lib.packages.flox-simple-lib;
+        hello-world = {inputs}: inputs.flox-simple-lib.packages.hello-world;
       };
 
       config = {

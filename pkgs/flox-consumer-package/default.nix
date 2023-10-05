@@ -24,7 +24,6 @@ stdenv.mkDerivation {
     echo "###" > $out/test.txt
     echo ${toString flox-simple-lib} >> $out/test.txt
     '';
-    # echo ${packages.aarch64-darwin.flox-simple-lib}
 
   # Add buildtime dependencies (not required at runtime)
   # to nativeBuildInputs.
