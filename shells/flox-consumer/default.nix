@@ -6,6 +6,7 @@
   zlib,
   flox-consumer-package,
   flox-simple-lib,
+  flox-consumer-app,
   hello-python
 }:
 #
@@ -45,5 +46,6 @@ mkShell {
     echo ${flox-simple-lib}
     echo "CONSUMER"
     echo ${hello-python}
+    echo ${flox-consumer-app}
   '';
 }
