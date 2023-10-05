@@ -4,7 +4,7 @@
   hello-python
 }:
 python3Packages.buildPythonPackage {
-  pname = "flox-consumer-app";
+  pname = "flox_consumer_app";
   version = "0.0.0";
   src = self;
   PIP_DISABLE_PIP_VERSION_CHECK = 1;
@@ -14,5 +14,6 @@ python3Packages.buildPythonPackage {
     hello-python
   ];
   meta.description = "an example flox package";
-  meta.mainProgram = "flox-consumer-app";
+  meta.mainProgram = "flox_consumer_app";
+}
 

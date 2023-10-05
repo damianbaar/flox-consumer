@@ -16,6 +16,9 @@
 mkShell {
   inputsFrom = [
     flox-consumer-package
+    flox-simple-lib
+    flox-consumer-app
+    hello-python
   ];
   # Compilers and libraries go here
   buildInputs = [
@@ -28,6 +31,7 @@ mkShell {
     gnumake
     go-task
     flox-consumer-package
+    flox-consumer-app
   ];
 
   # Any variable set in this block that isn't a reserved word will be set as an

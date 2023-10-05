@@ -59,6 +59,8 @@
           #       from one package set to another.
           #       composing such package sets ensures a single coherent set.
           projects = {
+            inherit (context.capacitated) flox-simple-lib; 
+            inherit (context.capacitated) hello-python; 
             /*
             inherit (context.capacitated) my-project;
             */
