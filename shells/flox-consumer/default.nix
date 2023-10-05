@@ -32,7 +32,7 @@ mkShell {
   # environment variable in the environment.
   WELCOME_MESSAGE = "Run make to build this project";
   PKG_REF = "${toString flox-consumer-package}";
-  PKG_REF_ = "${toString flox-simple-lib}";
+  PKG_REF_2 = "${toString flox-simple-lib}";
 
   # A shell hook is a script to run when entering an environment.
   # It can be used to perform any custom activation steps needed for your

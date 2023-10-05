@@ -3,7 +3,7 @@
   self,
   stdenv,
   lib,
-  # db-flox-simple-lib
+  flox-simple-lib
 }:
 # Replace "stdenv.mkDerivation" with your language's builder
 stdenv.mkDerivation {
@@ -22,6 +22,7 @@ stdenv.mkDerivation {
     mkdir -p $out
     touch $out/test.txt
     echo "###" > $out/test.txt
+    echo ${toString flox-simple-lib} >> $out/test.txt
     '';
     # echo ${packages.aarch64-darwin.flox-simple-lib}
 
