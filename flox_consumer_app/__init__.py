@@ -1,5 +1,4 @@
-from hello_python import some_fn
+import hello_python
 
 def hello():
-    some_fn()
     print("Hello everyone!")

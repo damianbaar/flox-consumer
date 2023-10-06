@@ -7,7 +7,7 @@
 }:
 # Replace "stdenv.mkDerivation" with your language's builder
 stdenv.mkDerivation {
-  pname = "flox-consumer-package";
+  pname = "flox-consumer-lib";
   version = "0.0.0-${lib.flox-floxpkgs.getRev self}";
   src = self; # + "/src";
 
