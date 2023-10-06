@@ -13,13 +13,11 @@ python3Packages.buildPythonPackage {
   propagatedBuildInputs = with python3Packages; [
     requests
     hello-python
-    # flox-consumer-lib
+    flox-consumer-lib
   ];
   buildInputs = with python3Packages; [
     requests
     hello-python
-    boto3
-    # flox-consumer-lib
   ];
   makeWrapperArgs = [
     # termcolor stopped printing color at some point when invoked without
