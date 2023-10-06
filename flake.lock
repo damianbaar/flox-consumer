@@ -954,11 +954,11 @@
         "flox-floxpkgs": "flox-floxpkgs_2"
       },
       "locked": {
-        "lastModified": 1696512738,
-        "narHash": "sha256-DZVyNVRHX7R2IeA7wYgKD/DGBfBUdsFtt3hTK6UGnFo=",
+        "lastModified": 1696586232,
+        "narHash": "sha256-p8AxsRtl0drDk75+M7tlNO/qtr7ryt3+x9xrXRkDl6w=",
         "owner": "damianbaar",
         "repo": "flox-simple-lib",
-        "rev": "045d2a9f4445c5917dd1359fafdc22e3262bafd8",
+        "rev": "c62df78695e0930fdf9cb7f368c8813b869cb0d5",
         "type": "github"
       },
       "original": {

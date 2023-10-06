@@ -8,12 +8,17 @@ python3Packages.buildPythonPackage {
   version = "0.0.0";
   src = self;
   PIP_DISABLE_PIP_VERSION_CHECK = 1;
-  doTest = false;
+  doCheck = false;
   # Add Python modules needed by your package here
   propagatedBuildInputs = with python3Packages; [
     requests
     hello-python
-    flox-consumer-lib
+    # flox-consumer-lib
+  ];
+  buildInputs = with python3Packages; [
+    requests
+    hello-python
+    # flox-consumer-lib
   ];
   makeWrapperArgs = [
     # termcolor stopped printing color at some point when invoked without

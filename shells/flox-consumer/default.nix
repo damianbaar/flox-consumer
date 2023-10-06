@@ -1,13 +1,13 @@
-{
-  gnumake,
-  mkShell,
-  stdenv,
-  go-task,
-  zlib,
-  flox-consumer-lib,
-  flox-simple-lib,
-  flox-consumer-app,
-  hello-python
+{ gnumake
+, mkShell
+, stdenv
+, go-task
+, zlib
+, python3
+, flox-consumer-lib
+, flox-simple-lib
+, flox-consumer-app
+, hello-python
 }:
 #
 # Create a development shell using three sections:
@@ -24,13 +24,15 @@ mkShell {
   buildInputs = [
     stdenv.cc
     zlib
+    hello-python
+    flox-simple-lib
+    flox-consumer-app
   ];
 
   # Add extra tools here
   packages = [
     gnumake
     go-task
-    flox-consumer-lib
     flox-consumer-app
   ];
 

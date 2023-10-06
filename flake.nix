@@ -1,4 +1,6 @@
 {
+  nixConfig.bash-prompt = "\[scc-dev\]$ ";
+
   description = "A flox project";
 
   inputs.flox-floxpkgs.url = "github:flox/floxpkgs";
