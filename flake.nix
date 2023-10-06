@@ -12,7 +12,7 @@
         # explicit package definitions
         # the format is equivalent to package definitions in
         # `./pkgs/my-pkg/default.nix`
-        flox-simple-lib = {inputs}: inputs.flox-simple-lib.packages.flox-simple-lib;
+        # flox-simple-lib = {inputs}: inputs.flox-simple-lib.packages.flox-simple-lib;
         hello-python = {inputs}: inputs.flox-simple-lib.packages.hello-python;
       };
 
@@ -61,7 +61,7 @@
           #       from one package set to another.
           #       composing such package sets ensures a single coherent set.
           projects = {
-            inherit (context.capacitated) flox-simple-lib; 
+            # inherit (context.capacitated) flox-simple-lib; 
             inherit (context.capacitated) hello-python; 
             /*
             inherit (context.capacitated) my-project;
