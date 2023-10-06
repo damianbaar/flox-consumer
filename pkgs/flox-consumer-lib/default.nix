@@ -3,7 +3,7 @@
   self,
   stdenv,
   lib,
-  flox-simple-lib
+  hello-python
 }:
 # Replace "stdenv.mkDerivation" with your language's builder
 stdenv.mkDerivation {
@@ -22,7 +22,7 @@ stdenv.mkDerivation {
     mkdir -p $out
     touch $out/test.txt
     echo "###" > $out/test.txt
-    echo ${toString flox-simple-lib} >> $out/test.txt
+    echo ${toString hello-python} >> $out/test.txt
     '';
 
   # Add buildtime dependencies (not required at runtime)

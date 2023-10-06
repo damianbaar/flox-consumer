@@ -18,6 +18,7 @@ python3Packages.buildPythonPackage {
   buildInputs = with python3Packages; [
     requests
     hello-python
+    boto3
     # flox-consumer-lib
   ];
   makeWrapperArgs = [

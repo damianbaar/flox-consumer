@@ -10,7 +10,7 @@
   # packages.nixpkgs-flox.black = {};
 
   environmentVariables.PIP_DISABLE_PIP_VERSION_CHECK = "1";
-  packages.db-flox-simple-lib.flox-simple-lib = {stability="unstable"; version="0.0.10";};
+  # packages.db-flox-simple-lib.flox-simple-lib = {stability="unstable"; version="0.0.10";};
   packages.db-flox-simple-lib.hello-python = {stability="unstable"; version="latest";};
 }
 
