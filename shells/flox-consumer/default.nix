@@ -5,7 +5,7 @@
 , zlib
 , python3
 , flox-consumer-lib
-, flox-simple-lib
+# , flox-simple-lib
 , flox-consumer-app
 , hello-python
 }:
@@ -16,7 +16,7 @@
 mkShell {
   inputsFrom = [
     flox-consumer-lib
-    flox-simple-lib
+    # flox-simple-lib
     flox-consumer-app
     hello-python
   ];
@@ -25,7 +25,7 @@ mkShell {
     stdenv.cc
     zlib
     hello-python
-    flox-simple-lib
+    # flox-simple-lib
     flox-consumer-app
   ];
 
